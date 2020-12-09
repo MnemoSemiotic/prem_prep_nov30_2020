@@ -96,4 +96,6 @@ some_int = 10
 
 some_str = f'The sum of {some_float} and {some_int} is {some_float + some_int}'
 
-print(some_str)
+# print(some_str)
+
+
