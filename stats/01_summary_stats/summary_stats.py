@@ -112,7 +112,7 @@ homes in Alameda, CA, all of which were sold in the previous month (1000s of $):
 '''
 house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
-print(sorted(house_prices))
+# print(sorted(house_prices))
 
 '''
 Find the mean value of the homes sold in April
@@ -140,5 +140,15 @@ samples = []
 for _ in range(5):
     samples.append(choice(sample_range))
 
-print(mean(sample_range))
-print(mean(samples))
+# print(mean(sample_range))
+# print(mean(samples))
+
+
+'''
+Mode
+'''
+def mode(lst):
+    pass
+
+
+mode_lst = ['kangaroo', 'muskrat', 'platypus', 'muskrat', 'squid', 'squirrel', 'muskrat']
