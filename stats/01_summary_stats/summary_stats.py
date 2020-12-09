@@ -85,3 +85,15 @@ farmhouse = [4.0, 14.0, 11.0, 9.0, 9.0, 8.0, 4.0, 20.0, 5.0, 8.9, 21.0, 9.2, 3.0
 # print(f'Median Farmhouse: {round(median(farmhouse), 1)}')
 
 
+
+'''
+f-strings
+- dynamically interpolate values into strings
+
+'''
+some_float = 8.5
+some_int = 10
+
+some_str = 'The sum of some_float and some_int is' + ' ' + str(some_float + some_int)
+
+print(some_str)
