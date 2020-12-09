@@ -159,4 +159,4 @@ def mode(lst):
 
 mode_lst = ['kangaroo', 'muskrat', 'platypus', 'muskrat', 'squid', 'squirrel', 'muskrat']
 
-print(most_occurring(mode_lst))
+print(mode(mode_lst))
