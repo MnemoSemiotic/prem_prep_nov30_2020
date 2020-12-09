@@ -39,3 +39,13 @@ B. Determine the trimmed mean for each group by trimming the smallest and larges
 # print(f'Sample Trimmed Mean Farmhouse: {round(mean(farmhouse, trim_by=1), 1)}')
 
 
+'''
+Median
+'''
+
+def median(lst)):
+    pass
+
+
+odd = [13, 18, 13, 14, 13, 16, 14, 21, 13]
+even = [15, 14, 10, 8, 12, 8, 16, 13]
