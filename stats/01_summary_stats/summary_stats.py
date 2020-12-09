@@ -52,7 +52,7 @@ def median(lst):
         return lst_sorted[mid]
     else:
         upper_mid_idx = int(len(lst)/2)
-        return mean([lst_sorted[upper_idx-1], lst_sorted[upper_idx]])
+        return mean([lst_sorted[upper_mid_idx-1], lst_sorted[upper_mid_idx]])
 
 odd = [13, 18, 13, 14, 13, 16, 35, 21, 13]
 even = [15, 14, 10, 8, 12, 8, 16, 13]
