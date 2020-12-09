@@ -43,13 +43,13 @@ B. Determine the trimmed mean for each group by trimming the smallest and larges
 Median
 '''
 
-def median(lst)):
+def median(lst):
     lst_sorted = sorted(lst)
 
     # if odd
-    if len(lst) % 2 == 0:
+    if len(lst) % 2 == 1:
         mid = int(len(lst) / 2)
-        return lst_sorted(mid)
+        return lst_sorted[mid]
 
 
 odd = [13, 18, 13, 14, 13, 16, 14, 21, 13]
