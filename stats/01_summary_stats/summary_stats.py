@@ -1,1 +1,3 @@
-print('hello world')
+def mean(lst, trim_by=0):
+
+    
