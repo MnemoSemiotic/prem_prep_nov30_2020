@@ -117,13 +117,27 @@ print(sorted(house_prices))
 '''
 Find the mean value of the homes sold in April
 '''
-print(f'Mean House Price: {round(mean(house_prices), 3)}')
+# print(f'Mean House Price: {round(mean(house_prices), 3)}')
 
 '''
 Find the median value of the homes sold in April 
 '''
-print(f'Median House Price: {round(median(house_prices), 3)}')
+# print(f'Median House Price: {round(median(house_prices), 3)}')
 
 '''
 Do you think mean or median is a “better” measure of center for this data? why? 
 '''
+
+
+'''
+Sampling quick
+'''
+from random import choice
+
+sample_range = list(range(0, 99+1))
+
+samples = []
+for _ in range(5):
+    samples.append(choice(sample_range))
+
+print(samples)
