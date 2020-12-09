@@ -99,3 +99,31 @@ some_str = f'The sum of {some_float} and {some_int} is {some_float + some_int}'
 # print(some_str)
 
 
+'''
+Breakout Slide 18
+
+An issue of a recent magazine reported the following home sale amounts for a sample of 
+homes in Alameda, CA, all of which were sold in the previous month (1000s of $):
+
+{ 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
+
+
+
+'''
+house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+
+print(sorted(house_prices))
+
+'''
+Find the mean value of the homes sold in April
+'''
+print(f'Mean House Price: {round(mean(house_prices), 3)}')
+
+'''
+Find the median value of the homes sold in April 
+'''
+print(f'Median House Price: {round(median(house_prices), 3)}')
+
+'''
+Do you think mean or median is a “better” measure of center for this data? why? 
+'''
