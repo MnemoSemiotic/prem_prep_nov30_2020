@@ -221,3 +221,9 @@ b = list(range(0, 100+1, 5))
 # print(iqr(b))
 
 
+def detect_outliers(lst, outlier_coef=1.5):
+    '''
+    given a list of data points, return a list containing
+    the detectuble outliers
+    '''
+    
