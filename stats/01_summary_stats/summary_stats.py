@@ -162,4 +162,9 @@ def mode(lst):
 
 mode_lst = ['kangaroo', 'muskrat', 'platypus', 'muskrat', 'squid', 'squirrel', 'muskrat']
 
-print(mode(mode_lst))
+# print(mode(mode_lst))
+
+
+'''
+Five Number Summary
+'''
