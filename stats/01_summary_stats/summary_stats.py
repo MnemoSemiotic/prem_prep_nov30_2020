@@ -167,4 +167,7 @@ mode_lst = ['kangaroo', 'muskrat', 'platypus', 'muskrat', 'squid', 'squirrel', '
 
 '''
 Five Number Summary
+IQR (Interquartile Range)
+Detecting Outliers
 '''
+
