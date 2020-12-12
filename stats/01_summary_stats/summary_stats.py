@@ -292,4 +292,18 @@ Variance
 
 '''
 def variance(lst, sample=True):
-    pass
+    mean_ = mean(lst)
+
+    total = 0
+
+    for item in lst:
+        total += (item - mean_)**2
+
+    if sample:
+        return total / (len(lst) - 1)
+    else:
+        return total / len(lst)
+
+
+house_prices =  [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+print(variance(house_prices, sample=True))
