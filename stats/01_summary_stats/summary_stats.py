@@ -313,4 +313,6 @@ print(variance(house_prices, sample=True))
 def stdev(lst, sample=True):
     return variance(lst, sample)**(1/2)
 
-print(stdev(house_prices, sample=True))
+# print(stdev(house_prices, sample=True))
+
+
