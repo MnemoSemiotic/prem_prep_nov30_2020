@@ -324,7 +324,7 @@ An issue of a recent magazine reported the following home sale amounts for a sam
 
 # Find the variance of the homes sold in April
 print(sorted(house_prices))
-print(f'Mean: {house_prices}')
+print(f'Mean: {mean(house_prices)}')
 
 print(f'Samp Variance: {round(variance(house_prices, sample=True))}')
 
@@ -339,7 +339,7 @@ print('\n Outliers Removed')
 house_prices_no_outliers = remove_outliers(house_prices)
 print(sorted(house_prices_no_outliers))
 
-print(f'Mean: {house_prices_no_outliers}')
+print(f'Mean: {mean(house_prices_no_outliers)}')
 
 print(f'Samp Variance: {round(variance(house_prices_no_outliers, sample=True))}')
 
