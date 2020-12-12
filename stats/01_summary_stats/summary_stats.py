@@ -171,3 +171,5 @@ IQR (Interquartile Range)
 Detecting Outliers
 '''
 
+def five_number_summary(lst):
+    pass
