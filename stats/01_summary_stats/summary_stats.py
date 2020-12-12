@@ -200,3 +200,22 @@ b = [6,1,4,51,7,16,10,14,46,22,24,56,48,54]
 # print(sorted(b))
 # print(five_number_summary(b))
 
+'''
+IQR
+Q3-Q1
+'''
+
+def iqr(lst):
+    _, q1, _, q3, _ = five_number_summary(lst)
+    return q3 - q1
+
+a = list(range(0, 50+1, 5)) 
+b = list(range(0, 100+1, 5))
+
+print(a)
+print(five_number_summary(a))
+print(iqr(a))
+
+print(b)
+print(five_number_summary(b))
+print(iqr(b))
