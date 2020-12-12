@@ -316,3 +316,31 @@ def stdev(lst, sample=True):
 # print(stdev(house_prices, sample=True))
 
 
+'''
+Breakout Slide 41
+An issue of a recent magazine reported the following home sale amounts for a sample of homes in Alameda, CA, all of which were sold in the previous month (1000s of $) (use the sample calculations):
+{ 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
+'''
+
+# Find the variance of the homes sold in April
+print(sorted(house_prices))
+print(f'Mean: {house_prices}')
+
+print(f'Samp Variance: {round(variance(house_prices, sample=True))}')
+
+# Find the standard deviation of the homes sold in April 
+print(f'Samp StDev: {round(stdev(house_prices, sample=True))}')
+
+# If we exclude the values we considered to be outliers, 
+# do you think the variance will increase or decrease? 
+# Check your answer by making the calculation.
+print('\n Outliers Removed')
+
+house_prices_no_outliers = remove_outliers(house_prices)
+print(sorted(house_prices_no_outliers))
+
+print(f'Mean: {house_prices_no_outliers}')
+
+print(f'Samp Variance: {round(variance(house_prices_no_outliers, sample=True))}')
+
+print(f'Samp StDev: {round(stdev(house_prices_no_outliers, sample=True))}')
