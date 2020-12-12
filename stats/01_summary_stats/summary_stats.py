@@ -246,3 +246,18 @@ test_outliers.append(10_000)
 # print(detect_outliers(test_outliers, outlier_coef=1.5))
 
 
+'''
+Breakout slide 30
+
+Consider the dataset from the previous question:
+A = { 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
+Calculate the five number summary for the data
+(mean) = 620.5, median = 582.5
+Determine the IQR of the Dataset
+
+Determine whether any of the data points can be defined as outliers. If so, what are the outliers?
+
+What is the best measure of centrality for this data?
+
+'''
+a =  [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
