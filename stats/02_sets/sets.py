@@ -55,7 +55,21 @@ def dedupe_in_order(lst):
 
     return deduped
 
-print(dedupe_in_order(lst))
+# print(dedupe_in_order(lst))
+
+
+'''
+Star (*) args
+'''
+def star_args(*args):
+    print(type(args))
+    for item in args:
+        print(item)
+    return None
+
+star_args('hi', 0.546, 'elephant', 5, True, None, [1,2,3,4,6])
+
+
 
 
 '''
@@ -75,3 +89,4 @@ def union(set1, set2):
     return set_union
 
 # print(union(list1, list2))
+
