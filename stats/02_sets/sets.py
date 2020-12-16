@@ -118,4 +118,7 @@ def intersection(set1, set2):
             set_intersect.append(item)
     return set_intersect
 
-print(intersection(list1, list2))
+# print(intersection(list1, list2))
+
+def intersection_mult(*args):
+    pass
