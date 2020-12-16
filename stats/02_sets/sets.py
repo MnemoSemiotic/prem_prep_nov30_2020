@@ -35,6 +35,17 @@ How many heads would you "Expect" in 20 flips?
 '''
 
 
+'''
+list/set trick
+- remove duplicates through set properties
+'''
+
+lst = [8,7,9,7,6,4,3,5,1,3,2,4,6,8,6]
+l1 = list(set(lst))
+
+print(l1)
+
+
 
 '''
 Union
@@ -52,4 +63,4 @@ def union(set1, set2):
 
     return set_union
 
-print(union(list1, list2))
+# print(union(list1, list2))
