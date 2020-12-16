@@ -33,3 +33,12 @@ def twenty_flips():
 How many heads would you "Expect" in 20 flips?
 0.5 * 20 = 10
 '''
+
+
+
+'''
+Union
+'''
+list1
+list2
+list3
