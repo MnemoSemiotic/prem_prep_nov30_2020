@@ -142,6 +142,7 @@ def intersection_mult(*args):
 
 '''
 Set Difference
+A - B
 '''
 def difference(set1, set2):
     set_difference = []
@@ -156,3 +157,12 @@ def difference(set1, set2):
 # print(difference(list2, list1))
 
 
+'''
+Complement
+'''
+list1 = ['basketball', 'baseball', 'soccer', 'rolf ball', 'ping pong', 'backgammon']
+list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse', 'baseball']
+list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
+
+def complement(sample_space, set1):
+    pass
