@@ -144,5 +144,13 @@ def intersection_mult(*args):
 Set Difference
 '''
 def difference(set1, set2):
-    pass
+    set_difference = []
 
+    for item in set1:
+        if item not in set2:
+            set_difference.append(item)
+    return set_difference
+
+
+print(difference(list1, list2))
+print(difference(list2, list1))
