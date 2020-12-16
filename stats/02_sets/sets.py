@@ -211,10 +211,16 @@ for outcome in samp_space:
     if outcome[0] == 1:
         A.append(outcome)
 
-for outcome in A:
-    print(outcome)
+# for outcome in A:
+#     print(outcome)
 
 # B = The event in which at least one of the coin flips results in heads
+B = []
+for outcome in samp_space:
+    if outcome.count('H') >= 1:
+        B.append(outcome)
 
+for outcome in B:
+    print(outcome)
 
 # List the sample points which are in the Union of events A and B from above
