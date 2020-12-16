@@ -44,4 +44,12 @@ list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse']
 list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
 
 def union(set1, set2):
-    pass
+    set_union = set1.copy()
+
+    for item in set2:
+        if item not in set_union:
+            set_union.append(item)
+
+    return set_union
+
+print(union(list1, list2))
