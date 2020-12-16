@@ -188,7 +188,7 @@ Breakout Slide 8
 # Write out the sample space for the random experiment which is defined as sequentially completing the following steps:
 # First, rolling a fair four-sided die
 # Then, flipping a coin
-# And finally, flipping the coin a second time
+# And finally, flipping the coin again
 # 	{1HH, 1HT, 1TH ...
 
 four_sided = [1,2,3,4]
