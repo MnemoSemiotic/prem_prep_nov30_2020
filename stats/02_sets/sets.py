@@ -111,4 +111,11 @@ list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse']
 list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
 
 def intersection(set1, set2):
-    pass
+    set_intersect = []
+
+    for item in set1:
+        if item in set2:
+            set_intersect.append(item)
+    return set_intersect
+
+print(intersection(list1, list2))
