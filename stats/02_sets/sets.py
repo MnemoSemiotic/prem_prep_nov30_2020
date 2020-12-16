@@ -107,7 +107,7 @@ def union_mult_sets(*mult_sets):
 Intersection
 '''
 list1 = ['basketball', 'baseball', 'soccer', 'rolf ball', 'ping pong', 'backgammon']
-list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse']
+list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse', 'baseball']
 list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
 
 def intersection(set1, set2):
@@ -121,4 +121,20 @@ def intersection(set1, set2):
 # print(intersection(list1, list2))
 
 def intersection_mult(*args):
-    pass
+    set_intersect = []
+
+    if len(args) > 1 and len(args[0]) > 0:
+        for item in args[0]:
+            is_member = True
+
+            for set_ in args[1:]:
+                if item not in set_:
+                    is_member = False
+                    break
+
+            if is_member:
+                set_intersect.append(item)
+
+    return set_intersect
+
+print(intersection_mult(list1, list2, list3))
