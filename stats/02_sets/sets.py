@@ -43,8 +43,19 @@ list/set trick
 lst = [8,7,9,7,6,4,3,5,1,3,2,4,6,8,6]
 l1 = list(set(lst))
 
-print(l1)
+# print(l1)
 
+
+def dedupe_in_order(lst):
+    deduped = []
+
+    for element in lst:
+        if element not in deduped:
+            deduped.append(element)
+
+    return deduped
+
+print(dedupe_in_order(lst))
 
 
 '''
