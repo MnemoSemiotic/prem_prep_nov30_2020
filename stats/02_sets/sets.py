@@ -106,3 +106,9 @@ def union_mult_sets(*mult_sets):
 '''
 Intersection
 '''
+list1 = ['basketball', 'baseball', 'soccer', 'rolf ball', 'ping pong', 'backgammon']
+list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse']
+list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
+
+def intersection(set1, set2):
+    pass
