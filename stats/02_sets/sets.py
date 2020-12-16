@@ -164,5 +164,11 @@ list1 = ['basketball', 'baseball', 'soccer', 'rolf ball', 'ping pong', 'backgamm
 list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse', 'baseball']
 list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
 
+extra_stuff = ['chess', 'rowing']
+
+sample_space = union_mult_sets(list1, list2, list3, extra_stuff)
+
 def complement(sample_space, set1):
-    pass
+    return difference(sample_space, set1)
+
+print(complement(sample_space, list1))
