@@ -102,3 +102,7 @@ def union_mult_sets(*mult_sets):
     return set_union
 
 # print(list1, list2, list3)
+
+'''
+Intersection
+'''
