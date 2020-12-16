@@ -4,6 +4,10 @@ Random Experiment
 
 from random import choice
 
+'''
+RE of a single coin flip
+'''
+
 def coin_flip():
     # return choice('HT') # equivalent alternative
     return choice(['H', 'T'])
@@ -11,7 +15,9 @@ def coin_flip():
 # print(coin_flip())
 
 
-# 20 flips
+'''
+RE: the count of heads in 20 flips
+'''
 def twenty_flips():
     flips = []
 
@@ -20,4 +26,10 @@ def twenty_flips():
 
     return flips
 
-print(twenty_flips())
+# print(twenty_flips())
+
+
+'''
+How many heads would you "Expect" in 20 flips?
+0.5 * 20 = 10
+'''
