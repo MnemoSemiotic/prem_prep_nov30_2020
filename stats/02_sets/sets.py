@@ -39,6 +39,9 @@ How many heads would you "Expect" in 20 flips?
 '''
 Union
 '''
-list1
-list2
-list3
+list1 = ['basketball', 'baseball', 'soccer', 'rolf ball', 'ping pong', 'backgammon']
+list2 = ['skiing', 'basketball', 'ping pong', 'snowboarding', 'lacrosse']
+list3 = ['rugby', 'skiing', 'water polo', 'curling', 'baseball']
+
+def union(set1, set2):
+    pass
