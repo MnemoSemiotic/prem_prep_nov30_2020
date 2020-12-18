@@ -52,6 +52,30 @@ a = True
 b = False
 c = True
 
-print((a or (b and c)) == ((a or b) and (a or c)))
+# print((a or (b and c)) == ((a or b) and (a or c)))
 
 
+'''
+A ∪ A = A
+AA = A
+'''
+a = True
+b = False
+c = True
+
+# print((a or a) == a)
+# print((a and a) == a)
+
+
+'''
+Domination Laws
+Aside: 
+U = Universal Set
+The set of which all other subsets are a subset of
+∅  = Empty Set = { }
+A ∪ U = U
+A ∩ U = A
+A ∩ ∅ = ∅
+'''
+print(sample_space)
+print(setA.union(sample_space))
