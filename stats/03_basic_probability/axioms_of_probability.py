@@ -100,6 +100,13 @@ a = True
 b = False
 c = True
 
-print(a or (a and b) == a)
-print(a and (a or b) == a)
-print(a and (a or b) == a or (a and b))
+# print(a or (a and b) == a)
+# print(a and (a or b) == a)
+# print(a and (a or b) == a or (a and b))
+
+
+'''
+Identity Property
+A ∪ ∅ = A
+'''
+print(setA.union(null_set) == setA)
