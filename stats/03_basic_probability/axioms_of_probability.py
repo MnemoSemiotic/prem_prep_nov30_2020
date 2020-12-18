@@ -109,4 +109,27 @@ c = True
 Identity Property
 A ∪ ∅ = A
 '''
-print(setA.union(null_set) == setA)
+# print(setA.union(null_set) == setA)
+
+
+'''
+Complement Laws for Universal and null sets
+not ∅ = U
+not U = ∅
+'''
+
+
+'''
+Involution Law
+not (not A) = A
+'''
+
+
+'''
+AB ∪ A(not B) = A
+'''
+a = True
+b = False
+c = True
+
+print((a and b) or (a and not b) == a)
