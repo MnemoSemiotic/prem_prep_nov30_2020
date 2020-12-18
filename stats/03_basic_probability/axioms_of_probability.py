@@ -5,4 +5,5 @@ setC = set(['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog'])
 
 sample_space = setA.union(setB).union(setC)
 
-print(sample_space)
+# print(sample_space)
+
