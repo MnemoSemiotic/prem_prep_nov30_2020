@@ -52,4 +52,4 @@ a = True
 b = False
 c = True
 
-print((a and b) or (b and c))
+print((a or (b and c)) == ((a or b) and (b or c)))
