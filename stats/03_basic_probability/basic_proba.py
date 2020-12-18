@@ -60,7 +60,7 @@ S == outcomes
 three_heads = []
 
 for outcome in outcomes:
-    if list.count('H') == 3:
+    if outcome.count('H') == 3:
         three_heads.append(outcome)
 
 print(len(three_heads))
