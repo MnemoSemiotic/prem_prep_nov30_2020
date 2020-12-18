@@ -80,5 +80,9 @@ A ∩ ∅ = ∅
 # print(sample_space)
 # print(setA.union(sample_space))
 
-print(setA)
-print(setA.intersection(sample_space))
+# print(setA)
+# print(setA.intersection(sample_space))
+
+
+null_set = set()
+print(null_set)
