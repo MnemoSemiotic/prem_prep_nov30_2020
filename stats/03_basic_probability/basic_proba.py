@@ -150,7 +150,7 @@ in a row in 14 flips of a fair coin.
 The 3 heads can occur in any way in a row.
 '''
 
-num_samples = 100000
+num_samples = 100000 # 
 three_heads_in_a_row = []
 
 
