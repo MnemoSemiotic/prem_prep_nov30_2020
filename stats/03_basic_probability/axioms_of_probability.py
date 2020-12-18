@@ -77,5 +77,8 @@ A ∪ U = U
 A ∩ U = A
 A ∩ ∅ = ∅
 '''
-print(sample_space)
-print(setA.union(sample_space))
+# print(sample_space)
+# print(setA.union(sample_space))
+
+print(setA)
+print(setA.intersection(sample_space))
