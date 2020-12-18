@@ -142,3 +142,21 @@ TTTT
 1 - 1/16 = 15/16
 '''
 
+
+'''
+How do we code a simulation that can, without mathematical formula
+answer a question like "What is the probability of getting 3 heads 
+in a row in 14 flips of a fair coin.
+The 3 heads can occur in any way in a row.
+'''
+
+num_samples = 1000
+three_heads_in_a_row = []
+
+
+for _ in range(num_samples):
+    samp = series_of_flips(14)
+    if samp.contains(['H', 'H', 'H']):
+        three_heads_in_a_row.append(samp)
+
+print(len(three_heads_in_a_row) / num_samples)
