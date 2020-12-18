@@ -22,5 +22,19 @@ a = True
 b = False
 c = True
 
-print((a or b) == (b or a))
-print((a and b) == (b and a))
+# print((a or b) == (b or a))
+# print((a and b) == (b and a))
+
+
+'''
+Associative
+(A ∪ B) ∪ C = A ∪ (B ∪ C) = A ∪ B ∪ C 
+⇒ 5 + (6 + 7) = (5 + 6) + 7 = 5 + 6 + 7
+(AB)C = A(BC) = ABC
+'''
+
+a = True
+b = False
+c = True
+
+print((a or b) or c == a or (b or c))
