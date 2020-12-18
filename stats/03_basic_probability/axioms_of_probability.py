@@ -52,6 +52,6 @@ a = True
 b = False
 c = True
 
-# print((a or (b and c)) == ((a or b) and (b or c)))
+print((a or (b and c)) == ((a or b) and (a or c)))
 
 
