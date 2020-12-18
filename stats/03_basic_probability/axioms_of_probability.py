@@ -85,4 +85,6 @@ A ∩ ∅ = ∅
 
 
 null_set = set()
-print(null_set)
+# print(null_set)
+
+print(setA.intersection(null_set) == null_set)
