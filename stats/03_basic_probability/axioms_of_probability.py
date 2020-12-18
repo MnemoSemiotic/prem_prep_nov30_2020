@@ -7,3 +7,11 @@ sample_space = setA.union(setB).union(setC)
 
 # print(sample_space)
 
+
+'''
+Commutative
+A ∪ B = B ∪ A
+AB = BA
+'''
+
+print(setA.union(setB) == setB.union(setA))
