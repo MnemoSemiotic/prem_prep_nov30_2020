@@ -66,3 +66,79 @@ for outcome in outcomes:
 # print(len(three_heads))
 # print(len(outcomes))
 # print(len(three_heads) / len(outcomes))
+
+
+'''
+Suppose you call the function series_of_flips(14).
+What is the probability that you get all 'H' values?
+
+HHHHHHHHHHHHHH <----------
+HHHHHHHHHHHHHT
+HHHHHHHHHHHHTH
+HHHHHHHHHHHHTT
+...
+
+first consider the probability P(H) for one flip:
+0.5
+
+H <----
+T
+
+next consider the P(HH) for two flips:
+0.25
+
+HH <---- A
+HT
+TH
+TT
+
+... P(HHH) ...
+0.125 = 0.5 * 0.5 * 0.5 = 0.5**3
+
+HHH <----
+HHT
+HTH
+HTT
+THH
+THT
+TTH
+TTT
+
+P(H 14 times) = 0.5**14 
+
+'''
+
+
+'''
+Suppose you call the function series_of_flips(14)
+What is the probability that you get at least one 'T' value?
+
+HHHHHHHHHHHHHH <----------
+HHHHHHHHHHHHHT
+HHHHHHHHHHHHTH
+HHHHHHHHHHHHTT
+...
+
+1 - 0.5**14
+
+
+HHHH <---- 1/16
+HHHT
+HHTH
+HHTT
+HTHH
+HTHT
+HTTH
+HTTT
+THHH
+THHT
+THTH
+THTT
+TTHH
+TTHT
+TTTH
+TTTT
+
+1 - 1/16 = 15/16
+'''
+
