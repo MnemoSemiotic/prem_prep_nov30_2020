@@ -87,4 +87,19 @@ A ∩ ∅ = ∅
 null_set = set()
 # print(null_set)
 
-print(setA.intersection(null_set) == null_set)
+# print(setA.intersection(null_set) == null_set)
+
+
+'''
+Absorption Laws
+A ∪ (AB) = A
+A(A ∪ B) = A
+'''
+
+a = True
+b = False
+c = True
+
+print(a or (a and b) == a)
+print(a and (a or b) == a)
+print(a and (a or b) == a or (a and b))
