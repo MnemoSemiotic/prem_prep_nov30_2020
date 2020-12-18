@@ -156,7 +156,7 @@ three_heads_in_a_row = []
 
 for _ in range(num_samples):
     samp = series_of_flips(14)
-    if samp.contains(['H', 'H', 'H']):
+    if 'HHH' in ''.join(samp):
         three_heads_in_a_row.append(samp)
 
 print(len(three_heads_in_a_row) / num_samples)
