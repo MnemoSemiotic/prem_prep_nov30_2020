@@ -8,7 +8,7 @@ def coin_flip():
 '''
 Write a function called series_of_flips.
   define one parameter, n, which represents the number of coin flips
-  return a length n list of the random coin flips
+  return a list of length n containing n random coin flips
 '''
 def series_of_flips(n):
     flips = []
@@ -16,4 +16,5 @@ def series_of_flips(n):
         flips.append(coin_flip())
     return flips
 
-print(series_of_flips(4))
+# print(series_of_flips(4))
+
