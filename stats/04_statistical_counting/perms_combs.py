@@ -20,4 +20,4 @@ def factorial(num):
         prod *= n
     return prod
 
-print(factorial(0))
+print(factorial(-1))
