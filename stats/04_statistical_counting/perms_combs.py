@@ -40,13 +40,13 @@ def perms(n, k):
 
 
 
-def perms(n, k):
-    perm = 1
-    for num in range(n, n-k, -1):
-        perm *= num
-    return perm
+# def perms(n, k):
+#     perm = 1
+#     for num in range(n, n-k, -1):
+#         perm *= num
+#     return perm
 
 # print(perms(10, 4)) # 5040
 
 
-
+print(perms(10000, 400))
