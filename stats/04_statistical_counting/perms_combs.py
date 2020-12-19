@@ -122,4 +122,23 @@ of 5 player teams?
 # an expensive counting approach
 
 num_combs = combs(11, 5)
-print(num_combs)
+# print(num_combs)
+
+def futsol_team_combs():
+    eleven_nums = range(1, 11+1)
+
+    # build our base 5 counting
+    base_11 = []
+
+    for i in eleven_nums:
+        for j in eleven_nums:
+            for k in eleven_nums:
+                for l in eleven_nums:
+                    for m in eleven_nums:
+                        base_11.append([i,j,k,l,m])
+
+    for num in base_11:
+        print(num)
+
+
+futsol_team_combs()
