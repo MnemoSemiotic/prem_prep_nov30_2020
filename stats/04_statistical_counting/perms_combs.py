@@ -199,5 +199,6 @@ def futsol_combs_samp(team_size=11, num_players=5):
 team_size = 11
 num_players = 5
 
-print(combs(team_size, num_players))
+
 print(len(futsol_combs_samp(team_size, num_players)))
+print(combs(team_size, num_players))
