@@ -100,7 +100,15 @@ nCk = n! / ((n-k)! * k!)
 def combs(n, k):
     return int(factorial(n) / ((factorial(n-k) * factorial(k))))
 
+
+def combs(n, k):
+    perm = 1
+    for num in range(n, n-k, -1):
+        perm *= num
+    return int(perm / factorial(k))
+
 print(combs(10, 5))
+
 
 
 '''
