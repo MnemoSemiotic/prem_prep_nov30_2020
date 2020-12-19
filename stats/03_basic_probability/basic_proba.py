@@ -247,5 +247,8 @@ for toys in all_toys_possible:
 
 # print(len(all_toys_possible), 5**5) # how to think about cardinality
 
-for toys in A:
-    print(toys)
+# for toys in A:
+#     print(toys)
+
+
+print(len(A) / len(all_toys_possible))
