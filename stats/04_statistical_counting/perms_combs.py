@@ -137,8 +137,16 @@ def futsol_team_combs():
                     for m in eleven_nums:
                         base_11.append([i,j,k,l,m])
 
-    for num in base_11:
-        print(num)
+    # for num in base_11:
+    #     print(num)
 
+    permutations = []
+
+    for five in base_11:
+        if len(list(set(five))) == 5:
+            permutations.append(five)
+
+    for perm in permutations:
+        print(perm)
 
 futsol_team_combs()
