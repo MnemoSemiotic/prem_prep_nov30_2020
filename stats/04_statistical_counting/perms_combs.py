@@ -38,6 +38,15 @@ g i j h
 def perms(n, k):
     return int(factorial(n) / factorial(n-k))
 
-print(perms(10, 4)) # 5040
+
+
+def perms(n, k):
+    perm = 1
+    for num in range(n, n-k, -1):
+        perm *= num
+    return perm
+
+# print(perms(10, 4)) # 5040
+
 
 
