@@ -92,6 +92,10 @@ for an_number in animals_counting:
 
 
 
+'''
+Combination
+nCk = n! / ((n-k)! * k!)
+'''
 
 def combs(n, k):
     pass
