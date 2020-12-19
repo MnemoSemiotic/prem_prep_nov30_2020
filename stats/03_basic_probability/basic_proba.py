@@ -163,6 +163,37 @@ The 3 heads can occur in any way in a row.
 # print(len(three_heads_in_a_row) / num_samples) # 0.637, 0.659, 0.651
 
 
+'''
+What is the probability of getting this exact series in 6 coin flips:
+HTTHTH?
 
+0.5**6
 
+Note: A very different questions would be
+What is the probability of getting exactly 3 tails in 6 coin flips?
+could use nested for loops, or binomial_pmf
+'''
 
+'''
+In three 6-sided dice rolls, what is the P of getting a sum of the 
+three rolls below 6?
+
+3 rolls    sum   outcome
+5 4 2   =   11     F
+1 2 1   =   4      T
+'''
+
+outcomes_S = []
+
+for r1 in range(1, 6+1):
+    for r2 in range(1, 6+1):
+        for r3 in range(1, 6+1):
+            outcomes_S.append([r1, r2, r3])
+
+A = []
+
+for roll in outcomes_S:
+    if sum(roll) < 6:
+        A.append(roll)
+
+print(len(A) / len(outcomes_S))
