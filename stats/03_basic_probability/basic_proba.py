@@ -119,7 +119,8 @@ HHHHHHHHHHHHTH
 HHHHHHHHHHHHTT
 ...
 
-1 - 1/2**14
+1 - 1/2**14 == (2**14 - 1) / 2**14
+
 
 
 HHHH <---- 1/16
