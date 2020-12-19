@@ -107,11 +107,19 @@ def combs(n, k):
         perm *= num
     return int(perm / factorial(k))
 
-print(combs(10, 5))
+# print(combs(10, 5))
 
 
 
 '''
 Combs Intuition
 
+Out of a traveling team of 11 futsol players, only 5 can be on the 
+court at any given time. What are all the possible combinations
+of 5 player teams?
 '''
+
+# an expensive counting approach
+
+num_combs = combs(11, 5)
+print(num_combs)
