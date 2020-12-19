@@ -244,3 +244,5 @@ for toys in all_toys_possible:
 
 for toys in all_toys_possible:
     print(toys)
+
+print(len(all_toys_possible), 5**5)
