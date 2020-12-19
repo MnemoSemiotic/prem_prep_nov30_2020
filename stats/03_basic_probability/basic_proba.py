@@ -242,7 +242,10 @@ for toys in all_toys_possible:
     if 'pog' in toys and 'fidget spinner' in toys and 'tamagotchi' in toys:
         A.append(toys)
 
-for toys in all_toys_possible:
-    print(toys)
+# for toys in all_toys_possible:
+#     print(toys)
 
-print(len(all_toys_possible), 5**5)
+# print(len(all_toys_possible), 5**5) # how to think about cardinality
+
+for toys in A:
+    print(toys)
