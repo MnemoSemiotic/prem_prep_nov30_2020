@@ -14,5 +14,10 @@ can you pull out these 5 toys?
 
 '''
 
-def factorial(n):
-    pass
+def factorial(num):
+    prod = 1
+    for n in range(2, num+1):
+        prod *= n
+    return prod
+
+print(factorial(0))
