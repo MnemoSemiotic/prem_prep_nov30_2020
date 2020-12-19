@@ -159,4 +159,6 @@ for _ in range(num_samples):
     if 'HHH' in ''.join(samp):
         three_heads_in_a_row.append(samp)
 
-print(len(three_heads_in_a_row) / num_samples) # 0.637, 0.659, 0.651
+# print(len(three_heads_in_a_row) / num_samples) # 0.637, 0.659, 0.651
+
+
