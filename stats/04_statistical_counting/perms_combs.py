@@ -146,7 +146,12 @@ def futsol_team_combs():
         if len(list(set(five))) == 5:
             permutations.append(five)
 
-    for perm in permutations:
-        print(perm)
+    # for perm in permutations:
+    #     print(perm)
+
+    combinations = []
+
+    for five in permutations:
+        ?
 
 futsol_team_combs()
