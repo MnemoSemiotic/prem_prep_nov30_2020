@@ -196,4 +196,51 @@ for roll in outcomes_S:
     if sum(roll) < 6:
         A.append(roll)
 
-print(len(A) / len(outcomes_S))
+# print(len(A) / len(outcomes_S)) # ~0.0462
+
+
+
+'''
+In a probabilistic process, you roll 1 6-sided die, 
+flip a coin, then roll a 12-sided die.
+
+What is the probability that you'll get this exact sequence?
+2, Heads, 7?
+
+1/6 * 1/2 * 1/12
+
+What is the probability that you'll get:
+< 3, Tails, > 6 ?
+
+2/6 * 1/2 * 6/12
+'''
+
+
+'''
+you've got 100 of each toy in a giant bag, evenly mixed, 
+what is the probability that you reach into the bag 5 times
+and pull out one of each of these items (in any order)
+pog, fidget spinner, tamagotchi (the other two can be anything)?
+
+five_toys = ['red truck', 'pog', 'fidget spinner', 'tamagotchi', 'gi joe']
+'''
+
+five_toys = ['red truck', 'pog', 'fidget spinner', 'tamagotchi', 'gi joe']
+
+all_toys_possible = []
+
+for toy1 in five_toys:
+    for toy2 in five_toys:
+        for toy3 in five_toys:
+            for toy4 in five_toys:
+                for toy5 in five_toys:
+                    all_toys_possible.append([toy1, toy2, toy3, toy4, toy5])
+
+A = []
+
+for toys in all_toys_possible:
+    if 'pog' in toys and 'fidget spinner' in toys and 'tamagotchi' in toys:
+        A.append(toys)
+
+for toys in all_toys_possible:
+    print(toys)
