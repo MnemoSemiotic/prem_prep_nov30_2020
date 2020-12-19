@@ -49,5 +49,18 @@ def perms(n, k):
 # print(perms(10, 4)) # 5040
 
 
-# print(perms(10000, 400))
+# print(perms(10000, 400)) # will have precision error with less optimized version
+
+
+
+'''
+Permutation Intuition
+
+Five pets and 5 pet bets. What are all the ways 
+that you can arrange those 5 pets in 5 beds?
+'''
+
+base_5 = ['bat', 'cat', 'frog', 'eel', 'hamster']
+
+animals_counting = []
 
