@@ -29,4 +29,15 @@ You have 10 students and you are conducting a science fair where
 How many different arrangements of those 4 winners is possible?
 
 code the perms(n, k) function, then answer this question ^
+
+g h i j
+g h j i
+g i j h
+...
 '''
+def perms(n, k):
+    return int(factorial(n) / factorial(n-k))
+
+print(perms(10, 4)) # 5040
+
+
