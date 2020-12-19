@@ -251,4 +251,6 @@ for toys in all_toys_possible:
 #     print(toys)
 
 
-print(len(A) / len(all_toys_possible))
+# print(len(A) / len(all_toys_possible)) # 0.24
+
+
