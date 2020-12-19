@@ -163,3 +163,41 @@ def futsol_team_combs():
 #     print(five)
 
 
+
+# an expensive sampling approach
+
+'''
+We can sample 5 players from our list of 11,
+can build combinations until we reach combs(11, 5)
+'''
+
+from random import choice
+
+def futsol_combs_samp(team_size=11, num_players=5):
+    player_combs = []
+
+    player_range = range(1, team_size+1)
+
+    while len(player_combs) < combs(team_size, num_players):
+        player_comb = []
+
+        while len(player_comb) < num_players:
+            player_num = choice(player_range)
+
+            if player_num not in player_comb:
+                player_comb.append(player_num)
+        
+        player_comb = sorted(player_comb)
+
+        if player_comb not in player_combs:
+            print(player_comb)
+            player_combs.append(player_comb)
+
+    return player_combs
+
+
+team_size = 11
+num_players = 5
+
+print(combs(team_size, num_players))
+print(len(futsol_combs_samp(team_size, num_players)))
