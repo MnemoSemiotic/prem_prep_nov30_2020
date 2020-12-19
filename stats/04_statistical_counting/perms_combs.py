@@ -152,6 +152,12 @@ def futsol_team_combs():
     combinations = []
 
     for five in permutations:
-        ?
+        sorted_five = sorted(five)
 
-futsol_team_combs()
+        if sorted_five not in combinations:
+            combinations.append(sorted_five)
+
+    return combinations
+
+for five in futsol_team_combs():
+    print(five)
