@@ -159,5 +159,7 @@ def futsol_team_combs():
 
     return combinations
 
-for five in futsol_team_combs():
-    print(five)
+# for five in futsol_team_combs():
+#     print(five)
+
+
