@@ -151,15 +151,18 @@ in a row in 14 flips of a fair coin.
 The 3 heads can occur in any way in a row.
 '''
 
-num_samples = 100000 # 
-three_heads_in_a_row = []
+# num_samples = 100000 # 
+# three_heads_in_a_row = []
 
 
-for _ in range(num_samples):
-    samp = series_of_flips(14)
-    if 'HHH' in ''.join(samp):
-        three_heads_in_a_row.append(samp)
+# for _ in range(num_samples):
+#     samp = series_of_flips(14)
+#     if 'HHH' in ''.join(samp):
+#         three_heads_in_a_row.append(samp)
 
 # print(len(three_heads_in_a_row) / num_samples) # 0.637, 0.659, 0.651
+
+
+
 
 
