@@ -91,3 +91,13 @@ for an_number in animals_counting:
 #     print(an_number)
 
 
+
+
+def combs(n, k):
+    pass
+
+
+'''
+Combs Intuition
+
+'''
