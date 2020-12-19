@@ -98,7 +98,9 @@ nCk = n! / ((n-k)! * k!)
 '''
 
 def combs(n, k):
-    pass
+    return int(factorial(n) / ((factorial(n-k) * factorial(k))))
+
+print(10, 5)
 
 
 '''
