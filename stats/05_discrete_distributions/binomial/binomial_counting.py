@@ -106,3 +106,37 @@ dec_to_bin(43)
 1 // 2  = 0
 reversed ==> 101011 is the binary representation of 43
 '''
+def dec_to_bin(dec, n_bits=8):
+    bin_list = []
+    x = dec
+
+    for _ in range(n_bits):
+        bit = x % 2
+        bin_list.append(bit)
+        x //= 2
+
+    return bin_list[::-1]# list(reversed(bin_list))
+
+print(dec_to_bin(43, 16))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
