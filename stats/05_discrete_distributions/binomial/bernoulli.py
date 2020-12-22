@@ -6,7 +6,7 @@ through this equation
 
 Y = sum from i=1 to i=3 of: (1/4)**i * roll[i]
 '''
-from random import choice
+from random import choice, random
 
 def get_three_rolls():
     rolls = []
@@ -39,3 +39,28 @@ def dict_of_Y(num_samples=1000):
 
 # for k, v in sorted(dict_of_Y(num_samples=100000).items()):
 #     print(f'{k}: {v}')
+
+
+
+
+'''
+Bernoulli trial
+single event with a binary outcome, with a set probability
+
+If you have a bag full of red and blue balls, where you have
+30 red balls, and 70 blue. If you reach into the bag thousands
+of times and average the counts of these balls, what percentage 
+would you expect of your draws would be red?
+
+30%
+'''
+
+def bernoulli(p_success=0.5):
+    draw = random() # gets a val betw 0 and 1
+
+    if draw < prob_success:
+        return True
+    else:
+        return False
+
+print(random())
