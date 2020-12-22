@@ -117,9 +117,23 @@ def dec_to_bin(dec, n_bits=8):
 
     return bin_list[::-1]# list(reversed(bin_list))
 
-print(dec_to_bin(43, 16))
+# print(dec_to_bin(43, 16))
 
-print(list(reversed([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1])))
+# print(list(reversed([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1])))
+
+
+def get_binary(n_bits=16):
+    bins_d = dict()
+
+    for dec in range(2**n_bits):
+        bins_d[dec] = dec_to_bin(dec, n_bits)
+
+    return bins_d
+
+for dec, bin_ in get_binary(n_bits=8).items():
+    print(f'{dec}: {bin_}')
+
+
 
 
 
