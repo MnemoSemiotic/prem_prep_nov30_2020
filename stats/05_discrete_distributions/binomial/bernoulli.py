@@ -58,9 +58,9 @@ would you expect of your draws would be red?
 def bernoulli(p_success=0.5):
     draw = random() # gets a val betw 0 and 1
 
-    if draw < prob_success:
+    if draw < p_success:
         return True
     else:
         return False
 
-print(random())
+print(bernoulli(p_success=0.5))
