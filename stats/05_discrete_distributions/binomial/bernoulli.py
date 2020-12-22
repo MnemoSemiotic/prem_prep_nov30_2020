@@ -77,3 +77,12 @@ def bernoulli(p_success=0.5):
 # true_count / trials
 
 
+
+
+'''
+Binomial Distribution: series of Bernoulli trials, where we keep
+a fixed probability p. We're usually trying to find the 
+probability of a certain number of successes k
+
+
+'''
