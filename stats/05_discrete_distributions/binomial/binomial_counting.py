@@ -122,7 +122,7 @@ def dec_to_bin(dec, n_bits=8):
 # print(list(reversed([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1])))
 
 
-def get_binary(n_bits=16):
+def get_binary(n_bits=8):
     bins_d = dict()
 
     for dec in range(2**n_bits):
@@ -130,8 +130,8 @@ def get_binary(n_bits=16):
 
     return bins_d
 
-for dec, bin_ in get_binary(n_bits=8).items():
-    print(f'{dec}: {bin_}')
+# for dec, bin_ in get_binary(n_bits=16).items():
+#     print(f'{dec}: {bin_}')
 
 
 
