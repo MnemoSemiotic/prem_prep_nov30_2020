@@ -64,3 +64,16 @@ def bernoulli(p_success=0.5):
         return False
 
 # print(bernoulli(p_success=0.5))
+
+# trials = 10000000
+# print([bernoulli(p_success=0.5) for _ in range(trials)].count(True) / trials)
+
+# # in other words
+# true_count = 0
+# for _ in range(trials):
+#     if bernoulli(p_success=0.5) == True:
+#         true_count += 1
+
+# true_count / trials
+
+
