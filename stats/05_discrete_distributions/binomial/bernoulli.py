@@ -24,4 +24,18 @@ def outcome_of_Y():
 
     return res
 
-print(outcome_of_Y())
+# print(outcome_of_Y())
+
+def dict_of_Y(num_samples=1000):
+    d = dict()
+
+    for _ in range(num_samples):
+        outcome = outcome_of_Y()
+        if outcome not in d:
+            d[outcome] = 0
+        d[outcome] += 1
+
+    return d
+
+for k, v in sorted(dict_of_Y(num_samples=1000).items()):
+    print(f'{k}: {v}')
