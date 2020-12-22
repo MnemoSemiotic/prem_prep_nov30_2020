@@ -161,7 +161,10 @@ for k, v in d.items():
 
 
 
-
+'''
+You flip a coin 12 times. What is the probability
+that you get 9 heads in 12 flips?
+'''
 
 
 
