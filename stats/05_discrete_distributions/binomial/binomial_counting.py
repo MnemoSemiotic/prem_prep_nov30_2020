@@ -164,19 +164,7 @@ for k, v in d.items():
 '''
 You flip a coin 12 times. What is the probability
 that you get 9 heads in 12 flips?
+
+What is the probability of getting 4 or less heads in 12 flips?
+P(X=0) + P(X=1) + P(X=2) + P(X=3) + P(X=4) = 0.19384 
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
