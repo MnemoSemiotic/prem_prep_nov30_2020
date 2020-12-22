@@ -90,4 +90,19 @@ Given a decimal number
     - reverse the sequence of outcomes
 
 dec_to_bin(43)
+
+--------------
+43 % 2     ==> 1
+43 // 2 = 21
+21 % 2     ==> 1
+21 // 2 = 10
+10 % 2     ==> 0
+10 // 2 = 5
+5 % 2      ==> 1
+5 // 2  = 2
+2 % 2      ==> 0
+2 // 2  = 1
+1 % 2      ==> 1
+1 // 2  = 0
+reversed ==> 101011 is the binary representation of 43
 '''
