@@ -37,5 +37,5 @@ def dict_of_Y(num_samples=1000):
 
     return d
 
-for k, v in sorted(dict_of_Y(num_samples=1000).items()):
+for k, v in sorted(dict_of_Y(num_samples=100000).items()):
     print(f'{k}: {v}')
