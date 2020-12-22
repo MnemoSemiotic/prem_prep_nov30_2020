@@ -53,4 +53,18 @@ The count of 1's in a 4-bit binary will follow a binomial distribution
 '''
 
 
+'''
+count in 4-bit binary
+'''
 
+def gen_4_bit_binary():
+    bin_dct = dict()
+    decimal = 0
+
+    for i in range(2):
+        for j in range(2):
+            for k in range(2):
+                for l in range(2):
+                    bin_dct[decimal] [i,j,k,l]
+                    decimal += 1
+    return bin_dct
