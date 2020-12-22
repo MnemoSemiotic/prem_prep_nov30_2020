@@ -84,5 +84,34 @@ Binomial Distribution: series of Bernoulli trials, where we keep
 a fixed probability p. We're usually trying to find the 
 probability of a certain number of successes k
 
+0 or 1
+
+How do you arrange 3 successes across 5 bernoulli trials?
+
+00000
+00001
+00010
+00011
+00100
+00101
+00110
+00111 <- this is a member of the set where you have 3 successes
+...
+01011 <- this is a member of the set where you have 3 successes
+10011 <- this is a member of the set where you have 3 successes
+
+How many ways can you arrange 1 1 in 5-bit binary?
+00001
+00010
+00100
+01000
+10000
+How many ways can you arrange 2 1s in 5-bit binary?
+00011
+00101
+01001
+10001
+...
 
 '''
+
