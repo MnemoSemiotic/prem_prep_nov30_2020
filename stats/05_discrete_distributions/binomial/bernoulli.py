@@ -63,4 +63,4 @@ def bernoulli(p_success=0.5):
     else:
         return False
 
-print(bernoulli(p_success=0.5))
+# print(bernoulli(p_success=0.5))
