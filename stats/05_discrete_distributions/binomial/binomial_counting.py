@@ -51,3 +51,6 @@ The count of 1's in a 4-bit binary will follow a binomial distribution
 3: 4/16
 4: 1/16
 '''
+
+
+
