@@ -103,5 +103,9 @@ def binary_sampling_clt(n_bits=16, num_samples=1000, num_sample_trials=500):
 
 d = binary_sampling_clt(n_bits=16, num_samples=1000, num_sample_trials=500)
 
+# for k, v in sorted(d.items()):
+#     print(f'{k}: {v}')
+
+
 for k, v in sorted(d.items()):
-    print(f'{k}: {v}')
+    print(f'{k}: {v / sum(d.values())}') # averaged (observed) probability
