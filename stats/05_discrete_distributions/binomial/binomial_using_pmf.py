@@ -24,7 +24,16 @@ PMF: Probability Mass Function
     k : represents the number of successes
     p : is the probability of success of single trial (held constant)
 
-What is the probability in 12 coin flips of a fair coin, that you get 7 heads?
 '''
 
 def binomial_pmf(n, k, p=0.5):
+    return combinations(n, k) * (p**k) * (1-p)**(n-k)
+
+'''
+What is the probability in 12 coin flips of a fair coin, that you get 7 heads?
+'''
+n = 12
+k = 7
+p = 0.5
+
+print(binomial_pmf(n, k, p))
