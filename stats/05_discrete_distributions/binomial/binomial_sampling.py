@@ -51,4 +51,20 @@ of that number of successes occurring.
 # 00101101 : 4 successes
 
 def binary_sampling_dict(num_bits, num_samples=1000):
-    pass
+    d = dict()
+
+    for _ in range(num_samples):
+        binary = generate_n_bits(num_bits)
+        observed_k = sum(binary)
+
+        if observed_k not in d:
+            d[observed_k] = 0
+        d[observed_k] += 1
+
+    return d
+
+''' one trial of 100 samples '''
+d = binary_sampling_dict(num_bits=16, num_samples=1000)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
