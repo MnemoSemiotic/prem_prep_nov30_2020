@@ -176,6 +176,27 @@ n = 20
 k_high = 11
 p = 0.95
 
-print(1 - binomial_cdf(n, k_high, p))
+# print(1 - binomial_cdf(n, k_high, p))
 
 # binomial_pmf(n, 12, p) + binomial_pmf(n, 13, p) + ... + binomial_pmf(n, 20, p)
+
+
+'''There are 8 components in parallel and at least 3 of those components need to be operational for a circuit to function. The probability of any given component being operational is 0.7. What is the probability that 3 components are operational?'''
+
+'''What is the probability that at least 3 components are operational?'''
+
+
+'''
+Suppose you independently flip a coin 5 times and the outcome of each toss is equally probable for a heads or a tails. What is the probability of obtaining exactly 2 tails?
+'''
+
+
+'''
+Suppose you are building some sort of machine that relies on a specific component. The component is very delicate and the probability of it failing is 0.32. You decide to install 3 of these components in parallel, such that they are independent to each other, to ensure that you only need 1 to work to get your machine working. 
+
+What is the probability that 1 or more of these components work?
+'''
+
+
+
+
