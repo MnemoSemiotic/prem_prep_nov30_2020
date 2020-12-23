@@ -14,7 +14,7 @@ Generalized Analytic Approach
 
 3 general types
     - Counting Approach
-    - Closed Formula Approach
+    - Closed Formula Approach <--
     - Sampling Approach
 '''
 
