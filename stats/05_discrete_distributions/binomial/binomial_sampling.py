@@ -11,6 +11,11 @@ Generalized Analytic Approach
 
 3. Describe or interpret the phenomenon through the lens of our observations
 
+
+3 general types
+    - Counting Approach
+    - Closed Formula Approach
+    - Sampling Approach
 '''
 
 from random import choice, random
