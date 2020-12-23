@@ -192,10 +192,18 @@ Suppose you independently flip a coin 5 times and the outcome of each toss is eq
 
 
 '''
-Suppose you are building some sort of machine that relies on a specific component. The component is very delicate and the probability of it failing is 0.32. You decide to install 3 of these components in parallel, such that they are independent to each other, to ensure that you only need 1 to work to get your machine working. 
+Suppose you are building some sort of machine that relies on a specific component. The
+component is very delicate and the probability of it failing is 0.32. You decide to 
+install 3 of these components in parallel, such that they are independent to each 
+other, to ensure that you only need 1 to work to get your machine working. 
 
 What is the probability that 1 or more of these components work?
+
+How many of these components would you need to install in parallel to ensure
+that there is over 99.5% probability that your machine is working upon any
+given observation?
 '''
+
 
 
 
