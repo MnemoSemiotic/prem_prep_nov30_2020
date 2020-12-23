@@ -36,4 +36,16 @@ n = 12
 k = 7
 p = 0.5
 
+# print(binomial_pmf(n, k, p))
+
+
+'''
+Sitting on a park bench you observe geese walking by. There's a probability
+of 0.3 that any goose walking by has black feet. What is the probability
+that 4 out of the next 12 geese walking by has black feet?
+'''
+n = 12
+k = 4
+p = 0.3
+
 print(binomial_pmf(n, k, p))
