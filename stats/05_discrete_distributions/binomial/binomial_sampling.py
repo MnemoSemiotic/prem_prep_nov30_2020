@@ -135,4 +135,12 @@ def generate_n_successes(n=8, p=0.5):
         lst.append(get_success(p))
     return lst
 
-print(generate_n_successes(n=8, p=0.05))
+# print(generate_n_successes(n=8, p=0.05))
+
+# verify, as 12*0.25 = 3
+test_trials = 100000
+trial_results = []
+for _ in range(test_trials):
+    trial_results.append(generate_n_successes(12, p=0.75).count(1))
+
+print(sum(trial_results) / test_trials)
