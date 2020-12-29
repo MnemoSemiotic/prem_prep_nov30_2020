@@ -105,7 +105,22 @@ def poisson_pmf_dict(lmbda, low_k, high_k):
 
     return d
 
-d = poisson_pmf_dict(10, 0, 30)
+# d = poisson_pmf_dict(10, 0, 30)
+
+# for k, v in d.items():
+#     print(f'{k}: {round(v, 6)}')
+
+
+
+def poisson_cdf_dict(lmbda, low_k, high_k):
+    d = dict()
+
+    for k in range(low_k, high_k+1):
+        d[k] = poisson_cdf(lmbda, k)
+
+    return d
+
+d = poisson_cdf_dict(10, 0, 120)
 
 for k, v in d.items():
-    print(f'{k}: {round(v, 6)}')
+    print(f'{k}: {v}')
