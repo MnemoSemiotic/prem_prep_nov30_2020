@@ -119,3 +119,12 @@ def binary_sampling_clt(n_bits=16, num_samples=1000, num_sample_trials=500):
 
 
 '''-----------------'''
+''' using random(), we can change our p value '''
+
+def get_success(p=0.5):
+    if random() < p:
+        return 1
+    else:
+        return 0
+
+print(get_success(0.25))
