@@ -74,3 +74,10 @@ lmbda = 15 * (15/10) # this can be a fraction
 k = 20
 
 # print(poisson_pmf(lmbda, k))
+
+'''
+CDF: Given the same intersection, what is the probability that
+more than 15 cars will pass through in 15 minutes?
+'''
+def poisson_cdf(lmbda, k_high):
+    pass
