@@ -135,4 +135,4 @@ def generate_n_successes(n=8, p=0.5):
         lst.append(get_success(p))
     return lst
 
-print(generate_n_successes(n=8, p=0.25))
+print(generate_n_successes(n=8, p=0.05))
