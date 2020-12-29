@@ -28,6 +28,15 @@ You have 10 students and you are conducting a science fair where 4 students will
 def permutations(n, k):
     return int(factorial(n) / factorial(n-k))
 
+# print(permutations(5, 5))
+# print(permutations(10, 4))
+# print(10*9*8*7)
+
+def permutations(n, k):
+    perm = 1
+    for i in range(n, n-k, -1):
+        perm *= i
+    return perm
+
 print(permutations(5, 5))
 print(permutations(10, 4))
-print(10*9*8*7)
