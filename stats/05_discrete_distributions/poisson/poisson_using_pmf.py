@@ -87,4 +87,20 @@ def poisson_cdf(lmbda, k_high):
 
     return cdf
 
-print(1 - poisson_cdf(lmbda, k_high=15))
+# print(1 - poisson_cdf(lmbda, k_high=15)) # 0.9366
+
+
+'''
+Apply a dict to analyze the poisson pmf
+
+keys will be values of k
+value will be the probabilities associated with k outcomes
+'''
+
+def poisson_pmf_dict(lmbda, low_k, high_k):
+    pass
+
+d = poisson_pmf_dict(10, 0, 30)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
