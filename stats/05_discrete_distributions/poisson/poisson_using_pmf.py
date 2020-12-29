@@ -149,3 +149,17 @@ def poisson_count_exp(lmbda, low_k, high_k, num_samples=10000):
 #     print(f'{k}: {v}')
 
 
+'''
+There's a busy intersection in Denver, on average where 30 cars pass by every 10 
+minutes. What is the probability that 40 cars will pass by if observing a new ten 
+minute time period?
+'''
+lmbda = 30
+k = 40
+
+'''
+You have a data set from observing a stream where salmon swim by at a rate of 10 fish 
+every 15 minutes. What is the probability that 15 fish swim by in 30 minutes?
+'''
+lmbda = 20
+k = 15
