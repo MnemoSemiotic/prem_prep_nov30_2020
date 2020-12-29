@@ -134,3 +134,16 @@ Given a certain number of observation (10000),
 how many events would you expect for each value of k
 given a lambda of 10, low_k=0, high_k=30?
 '''
+
+def poisson_count_exp(lmbda, low_k, high_k, num_samples=10000):
+    d = dict()
+
+    for k in range(low_k, high_k+1):
+        d[k] = round(poisson_pmf(lmbda, k) * num_samples)
+
+    return d
+
+d = poisson_count_exp(10, 0, 30, num_samples=10000)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
