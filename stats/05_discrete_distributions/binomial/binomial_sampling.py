@@ -143,4 +143,25 @@ trial_results = []
 for _ in range(test_trials):
     trial_results.append(generate_n_successes(12, p=0.75).count(1))
 
-print(sum(trial_results) / test_trials)
+# print(sum(trial_results) / test_trials)
+
+
+def binary_sampling_vary_p(num_bits=8, p=0.5, num_samples=1000):
+    d = dict()
+
+    for _ in range(num_samples):
+        binary = generate_n_successes(num_bits, p)
+        k = sum(binary)
+
+        if k not in d:
+            d[k] = 0
+        d[k] += 1
+
+    return d
+
+
+''' One trial of 1000 samples '''
+d = binary_sampling_vary_p(num_bits=8, p=0.3, num_samples=1000)
+
+for k, v in sorted(d.items()):
+    print(f'{k}: {v}')
