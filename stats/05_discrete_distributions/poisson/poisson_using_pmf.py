@@ -143,7 +143,9 @@ def poisson_count_exp(lmbda, low_k, high_k, num_samples=10000):
 
     return d
 
-d = poisson_count_exp(10, 0, 30, num_samples=10000)
+# d = poisson_count_exp(10, 0, 30, num_samples=10000)
 
-for k, v in d.items():
-    print(f'{k}: {v}')
+# for k, v in d.items():
+#     print(f'{k}: {v}')
+
+
