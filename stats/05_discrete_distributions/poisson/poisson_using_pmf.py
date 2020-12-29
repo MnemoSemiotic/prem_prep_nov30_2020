@@ -80,4 +80,11 @@ CDF: Given the same intersection, what is the probability that
 more than 15 cars will pass through in 15 minutes?
 '''
 def poisson_cdf(lmbda, k_high):
-    pass
+    cdf = 0.0
+
+    for k in range(k_high+1):
+        cdf += poisson_pmf(lmbda, k)
+
+    return cdf
+
+print(1 - poisson_cdf(lmbda, k_high=15))
