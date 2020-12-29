@@ -120,7 +120,9 @@ def poisson_cdf_dict(lmbda, low_k, high_k):
 
     return d
 
-d = poisson_cdf_dict(10, 0, 120)
+# d = poisson_cdf_dict(10, 0, 120)
 
-for k, v in d.items():
-    print(f'{k}: {v}')
+# for k, v in d.items():
+#     print(f'{k}: {v}')
+
+
