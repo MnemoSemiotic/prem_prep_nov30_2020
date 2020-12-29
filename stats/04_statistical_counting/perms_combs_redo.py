@@ -151,9 +151,17 @@ def basketball_combs():
     
     return combs
 
-for five in basketball_combs():
-    print(five)
+# for five in basketball_combs():
+#     print(five)
 
 
 
-basketball_combs()
+
+# an expensive sampling approach
+
+'''
+We can sample 5 players from our list of 11,
+can continue to build combinations until we reach
+11C5 combinations
+'''
+print(num_combs)
