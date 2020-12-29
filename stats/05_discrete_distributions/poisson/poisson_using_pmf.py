@@ -27,4 +27,14 @@ What is the probability that a given image has 25 stars in it?
 lmbda = 30
 k = 25
 
-print(poisson_pmf(lmbda, k))
+# print(poisson_pmf(lmbda, k)) # 0.0511
+
+
+'''
+e is a constant, a factor of entropy, and it applies in a Poisson process
+
+Criteria or Constraints for Poisson
+- an average for a given volume/area/length of time
+- each event needs to be independent
+- assumption that the rate is consistent (iid. independent and identical distribution)
+'''
