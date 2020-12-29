@@ -78,3 +78,15 @@ for an_number in animals_counting:
 
 # for an_number in animal_perms:
 #     print(an_number)
+
+
+'''
+Combinations
+nCk = n! / ((n-k)! * k!)
+'''
+def combinations(n, k):
+    return factorial(n) / (factorial(n-k) * factorial(k))
+
+''' How many 5 card combos from a 52 card deck?'''
+
+print(combinations(52, 3))
