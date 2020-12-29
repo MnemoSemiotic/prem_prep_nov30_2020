@@ -129,7 +129,16 @@ def basketball_combs():
                     for m in twentyone_nums:
                         possible_five.append([i,j,k,l,m])
 
+    # for five in possible_five:
+    #     print(five)
+
+    permutations = []
+
     for five in possible_five:
+        if len(list(set(five))) == 5:
+            permutations.append(five)
+
+    for five in permutations:
         print(five)
 
 
