@@ -97,4 +97,14 @@ def combinations(n, k):
         perm *= i
     return int(perm / factorial(k))
     
-print(combinations(52, 3))
+# print(combinations(52, 3))
+
+
+'''
+Combs Intuition
+
+Out of a set of 21 basketball players, only
+5 can be on the court at a time. What are all
+the combinations possible for that basketball team.
+'''
+print(combinations(21, 5))
