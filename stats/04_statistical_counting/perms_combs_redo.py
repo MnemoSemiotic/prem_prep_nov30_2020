@@ -23,5 +23,10 @@ if k==n =>
 '''
 You have 10 students and you are conducting a science fair where 4 students will win
 1st, 2nd, 3rd, 4th. How many different arrangements of those 4 winners is possible?
-
 '''
+
+def permutations(n, k):
+    return int(factorial(n) / factorial(n-k))
+
+print(permutations(5, 5))
+print(permutations(10, 4))
