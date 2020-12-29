@@ -107,4 +107,27 @@ Out of a set of 21 basketball players, only
 5 can be on the court at a time. What are all
 the combinations possible for that basketball team.
 '''
-print(combinations(21, 5))
+# print(combinations(21, 5))
+
+'''
+What are the combinations of teams that can be on the court?
+'''
+
+# an expensive counting approach
+num_combs = combinations(21, 5)
+
+def basketball_combs():
+    twentyone_nums = range(1, 21+1)
+
+    # every arrangement of 5
+    possible_five = []
+
+    for i in twentyone_nums:
+        for j in twentyone_nums:
+            for k in twentyone_nums:
+                for l in twentyone_nums:
+                    for m in twentyone_nums:
+                        possible_five.append([i,j,k,l,m])
+
+    for five in possible_five:
+        print(five)
