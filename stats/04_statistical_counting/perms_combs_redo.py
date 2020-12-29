@@ -42,3 +42,12 @@ def permutations(n, k):
 # print(permutations(10, 4))
 
 
+'''
+Permutations Intuition
+- count normally
+- reduce the space by eliminating duplicates
+
+Five pets and 5 beds. What are all the ways that you can
+arrange those 5 pets in 5 beds?
+'''
+base_5 = ['bat', 'cat', 'frog', 'eel', 'hamster']
