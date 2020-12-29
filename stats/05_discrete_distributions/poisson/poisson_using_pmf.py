@@ -38,3 +38,22 @@ Criteria or Constraints for Poisson
 - each event needs to be independent
 - assumption that the rate is consistent (iid. independent and identical distribution)
 '''
+
+
+
+'''
+Poisson-like phenomena
+
+Phenomenon: 
+Given an area of grass, it is likely that the distribution of pill bugs
+follows a poisson process.
+
+Question:
+PMF: in a square foot of your front yard, on avg there are 20
+roly polys in residence. What is the proba that in a given
+square foot of your front yard, you find 15 roly pols?
+'''
+lmbda = 20
+k = 15
+
+# print(poisson_pmf(lmbda, k))
