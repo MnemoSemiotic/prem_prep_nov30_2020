@@ -85,8 +85,16 @@ Combinations
 nCk = n! / ((n-k)! * k!)
 '''
 def combinations(n, k):
-    return factorial(n) / (factorial(n-k) * factorial(k))
+    return int(factorial(n) / (factorial(n-k) * factorial(k)))
 
 ''' How many 3 card combos from a 52 card deck?'''
 
+# print(combinations(52, 3))
+
+def combinations(n, k):
+    perm = 1
+    for i in range(n, n-k, -1):
+        perm *= i
+    return int(perm / factorial(k))
+    
 print(combinations(52, 3))
