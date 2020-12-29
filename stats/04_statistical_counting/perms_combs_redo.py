@@ -143,6 +143,16 @@ def basketball_combs():
 
     combs = []
 
+    for five in perms:
+        sorted_five = sorted(five)
+
+        if sorted_five not in combs:
+            combs.append(sorted_five)
+    
+    return combs
+
+for five in basketball_combs():
+    print(five)
 
 
 
