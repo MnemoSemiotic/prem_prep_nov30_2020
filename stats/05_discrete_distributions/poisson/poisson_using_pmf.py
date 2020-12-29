@@ -126,3 +126,11 @@ def poisson_cdf_dict(lmbda, low_k, high_k):
 #     print(f'{k}: {v}')
 
 
+
+'''
+You are observing a phenomenon that follows
+perfectly a poisson process.
+Given a certain number of observation (10000),
+how many events would you expect for each value of k
+given a lambda of 10, low_k=0, high_k=30?
+'''
