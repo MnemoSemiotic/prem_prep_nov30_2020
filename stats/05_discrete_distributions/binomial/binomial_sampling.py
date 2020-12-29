@@ -127,4 +127,12 @@ def get_success(p=0.5):
     else:
         return 0
 
-print(get_success(0.25))
+# print(get_success(0.25))
+
+def generate_n_successes(n=8, p=0.5):
+    lst = []
+    for _ in range(n):
+        lst.append(get_success(p))
+    return lst
+
+print(generate_n_successes(n=8, p=0.25))
