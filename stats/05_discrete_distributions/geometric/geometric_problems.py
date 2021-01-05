@@ -22,3 +22,7 @@ Differentiating Binomial, Poisson, Geometric, and basic probability
 
 # p=0.3, n=20, What is the probability that 18 (k) are successes? binomial_pmf(n, p, k)
 
+
+# Geometric
+# The proba of some binary event is p. What is the probability of having your
+# first success on the kth trial?
