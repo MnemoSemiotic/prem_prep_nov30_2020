@@ -140,5 +140,24 @@ def geometric_pmf_dict(p, k_high, inclusive=True):
 d_incl = geometric_pmf_dict(p=0.5, k_high=10, inclusive=True)
 d_excl = geometric_pmf_dict(p=0.5, k_high=10, inclusive=False)
 
-for k, v in d_excl.items():
+# for k, v in d_excl.items():
+#     print(f'{k}: {v}')
+
+
+'''
+Geometric CDF dict
+'''
+
+def geometric_cdf_dict(p, k_high, inclusive=True):
+    d = dict()
+
+    for k in range(inclusive, k_high+1):
+        d[k] = geom_cdf_closed(p, k, inclusive)
+
+    return d
+
+d_incl = geometric_cdf_dict(p=0.5, k_high=10, inclusive=True)
+d_excl = geometric_cdf_dict(p=0.5, k_high=10, inclusive=False)
+
+for k, v in d_incl.items():
     print(f'{k}: {v}')
