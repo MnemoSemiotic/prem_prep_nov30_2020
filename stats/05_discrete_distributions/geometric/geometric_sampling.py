@@ -19,4 +19,21 @@ def perform_geometric(p=0.5):
 
     print(f'Success on the {num_trials} trial')
 
-perform_geometric(p=0.5)
+# perform_geometric(p=0.5)
+
+
+def geometric(p=0.5):
+    # num of failures prior to success
+    lst = []
+
+    for _ in range(10000000000):
+        flip = bernoulli(p)
+        lst.append(flip)
+
+        if flip == 1:
+            break
+    
+    return len(lst) - 1
+
+
+print(geometric(p=0.0005))
