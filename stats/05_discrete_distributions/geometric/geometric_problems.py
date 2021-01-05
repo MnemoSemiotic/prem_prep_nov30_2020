@@ -12,6 +12,7 @@ print(geometric_pmf(p, k, inclusive=True))
 
 
 
+
 '''
 Differentiating Binomial, Poisson, Geometric, and basic probability
 '''
