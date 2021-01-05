@@ -37,3 +37,7 @@ k = 3
 # print(geometric_pmf(p, k-1, inclusive=False))
 
 
+'''
+You are flipping a fair coin. What is the probability that
+you get your first heads on the 7th flip?
+'''
