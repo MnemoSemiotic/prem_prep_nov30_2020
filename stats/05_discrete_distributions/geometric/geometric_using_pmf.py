@@ -63,3 +63,20 @@ k_exclusive = 14
 # print(geometric_pmf(p, k_exclusive, inclusive=False))
 
 
+
+
+
+'''
+You have a series of routers transmitting packets of data.
+There is a 0.99 probability that a given packet of data
+passes through the router.
+What is the probability that a given packet of data will pass
+successfully through 14 routers?
+0.99**14
+
+What is the probability that a given packet will be dropped before
+or on the 15th router it passes through?
+'''
+
+def geom_cdf_accum(p, k, inclusive=True):
+    pass
