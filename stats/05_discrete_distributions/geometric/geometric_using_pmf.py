@@ -46,3 +46,20 @@ k = 7
 
 # print(geometric_pmf(p, k, inclusive=True))
 # print(geometric_pmf(p, k-1, inclusive=False))
+
+
+'''
+You have a series of routers transmitting packets of data.
+There is a 0.99 probability that a given packet of data
+passes through the router.
+What is the probability that a given packet of data is 
+lost in the 15th router?
+'''
+p = 0.01
+k_inclusive = 15
+k_exclusive = 14
+
+# print(geometric_pmf(p, k_inclusive, inclusive=True))
+# print(geometric_pmf(p, k_exclusive, inclusive=False))
+
+
