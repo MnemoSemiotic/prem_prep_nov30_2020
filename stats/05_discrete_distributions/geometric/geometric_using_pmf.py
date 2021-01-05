@@ -108,3 +108,6 @@ What is the probability that a given packet will be dropped before
 the 15th router it passes through... in other words, on or 
 before the 14th router.
 '''
+p = 0.01
+print(geom_cdf_accum(p, 14, inclusive=True))
+print(geom_cdf_accum(p, 13, inclusive=False))
