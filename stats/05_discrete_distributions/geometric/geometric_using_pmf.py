@@ -33,5 +33,7 @@ is the third person you offer a flier?
 p = 0.47
 k = 3
 
-print(geometric_pmf(p, k, inclusive=True))
-print(geometric_pmf(p, k-1, inclusive=False))
+# print(geometric_pmf(p, k, inclusive=True))
+# print(geometric_pmf(p, k-1, inclusive=False))
+
+
