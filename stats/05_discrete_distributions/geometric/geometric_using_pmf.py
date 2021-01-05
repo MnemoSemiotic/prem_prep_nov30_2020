@@ -159,5 +159,6 @@ def geometric_cdf_dict(p, k_high, inclusive=True):
 d_incl = geometric_cdf_dict(p=0.5, k_high=100, inclusive=True)
 d_excl = geometric_cdf_dict(p=0.5, k_high=10, inclusive=False)
 
-for k, v in d_incl.items():
-    print(f'{k}: {v}')
+# for k, v in d_incl.items():
+#     print(f'{k}: {v}')
+
