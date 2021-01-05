@@ -17,3 +17,8 @@ print(geometric_pmf(p, k, inclusive=True))
 Differentiating Binomial, Poisson, Geometric, and basic probability
 '''
 
+# Binomial
+# What is the probability that some number out of some number of events is successful?
+
+# p=0.3, n=20, What is the probability that 18 (k) are successes? binomial_pmf(n, p, k)
+
