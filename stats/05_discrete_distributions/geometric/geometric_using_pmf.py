@@ -75,7 +75,7 @@ successfully through 14 routers?
 0.99**14
 
 What is the probability that a given packet will be dropped before
-or on the 15th router it passes through?
+the 15th router it passes through?
 '''
 
 def geom_cdf_accum(p, k, inclusive=True):
