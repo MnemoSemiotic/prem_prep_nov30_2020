@@ -99,8 +99,10 @@ that you get your first heads before or on the 7th flip?
 '''
 p = 0.5
 
-# print(geom_cdf_accum(p, 7, inclusive=True))
-# print(geom_cdf_accum(p, 6, inclusive=False))
+print(geom_cdf_accum(p, 7, inclusive=True))
+print(geom_cdf_accum(p, 6, inclusive=False))
+print(geom_cdf_closed(p, 7, inclusive=True))
+print(geom_cdf_closed(p, 6, inclusive=False))
     
 
 '''
@@ -118,3 +120,5 @@ before the 14th router.
 p = 0.01
 print(geom_cdf_accum(p, 14, inclusive=True))
 print(geom_cdf_accum(p, 13, inclusive=False))
+print(geom_cdf_closed(p, 14, inclusive=True))
+print(geom_cdf_closed(p, 13, inclusive=False))
