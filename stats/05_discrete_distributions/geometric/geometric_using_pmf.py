@@ -66,17 +66,7 @@ k_exclusive = 14
 
 
 
-'''
-You have a series of routers transmitting packets of data.
-There is a 0.99 probability that a given packet of data
-passes through the router.
-What is the probability that a given packet of data will pass
-successfully through 14 routers?
-0.99**14
 
-What is the probability that a given packet will be dropped before
-the 15th router it passes through?
-'''
 
 '''
 Geometric CDF
@@ -102,6 +92,19 @@ that you get your first heads before or on the 7th flip?
 '''
 p = 0.5
 
-print(geom_cdf_accum(p, 7, inclusive=True))
-print(geom_cdf_accum(p, 6, inclusive=False))
+# print(geom_cdf_accum(p, 7, inclusive=True))
+# print(geom_cdf_accum(p, 6, inclusive=False))
     
+
+'''
+You have a series of routers transmitting packets of data.
+There is a 0.99 probability that a given packet of data
+passes through the router.
+What is the probability that a given packet of data will pass
+successfully through 14 routers?
+0.99**14
+
+What is the probability that a given packet will be dropped before
+the 15th router it passes through... in other words, on or 
+before the 14th router.
+'''
