@@ -96,5 +96,12 @@ def geom_cdf_accum(p, k, inclusive=True):
     return proba
 
 
+'''
+You are flipping a fair coin. What is the probability
+that you get your first heads before or on the 7th flip?
+'''
+p = 0.5
 
+print(geom_cdf_accum(p, 7, inclusive=True))
+print(geom_cdf_accum(p, 6, inclusive=False))
     
