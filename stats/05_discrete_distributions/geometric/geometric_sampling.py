@@ -36,4 +36,9 @@ def geometric(p=0.5):
     return len(lst) - 1
 
 
-print(geometric(p=0.0005))
+# print(geometric(p=0.0005))
+
+
+
+def geometric_samples_dict(p=0.05, num_samples=10000):
+    pass
