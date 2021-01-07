@@ -1,3 +1,9 @@
+'''
+The exponential distribution can be used to 
+model time between Poisson events!
+'''
+
+
 from math import e, sqrt
 
 def exponential_pdf(lmbda, x):
