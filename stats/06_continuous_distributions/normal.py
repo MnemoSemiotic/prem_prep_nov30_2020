@@ -1,7 +1,7 @@
 from math import e, pi, sqrt
 
 def normal_pdf(x=0, mu=0, sigma=1):
-    return (1 / (sigma * sqrt(2 * pi))) * (e**(-(1/2))) * (((x - mu) / sigma)**2)
+    return (1 / (sigma * sqrt(2 * pi))) * e **(-(1/2) * ((x - mu)/sigma)**2)
 
 
 def normal_cdf(x=0, mu=0, sigma=1):
@@ -16,7 +16,7 @@ def normal_cdf(x=0, mu=0, sigma=1):
         if val > x:
             break
     
-    return area_accum
+    return area_accum*0.001
 
 
 ''' Example Slide 21 '''
