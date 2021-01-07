@@ -7,8 +7,20 @@ def normal_pdf(x=0, mu=0, sigma=1):
 def normal_cdf(x=0, mu=0, sigma=1):
     vals = [num*0.001 for num in range(-1000, int(x*1000))]
 
+    area_accum = 0.0
+
     for val in vals:
-        print(val)
+        res = normal_pdf(val, mu, sigma)
+        area_accum += res
+
+        if val > x:
+            break
+    
+    return area_accum
+
+
+''' Example Slide 21 '''
+        
 
 
 print(normal_cdf())
