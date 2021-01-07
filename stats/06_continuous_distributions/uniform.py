@@ -14,4 +14,6 @@ def get_binary(n=8):
 
     # return return_list
 
-print(get_binary(16))
+# print(get_binary(16))
+
+
