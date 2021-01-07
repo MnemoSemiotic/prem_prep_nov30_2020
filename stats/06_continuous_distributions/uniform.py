@@ -27,5 +27,6 @@ def get_float(n=8):
     return float_accum, bin_list
 
 
-print(get_float(8))
+# print(get_float(8))
+
 
