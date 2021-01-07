@@ -37,4 +37,9 @@ What is the amount of time that you would expect to wait?
 What is the variance of this random variable?
 
 '''
-print(1 - exponential_cdf(lmbda=0.1, x=10))
+# print(1 - exponential_cdf(lmbda=0.1, x=10))
+
+# print(exponential_mean(lmbda=0.1))
+
+# print(exponential_variance(0.1))
+# print(exponential_std(0.1))
