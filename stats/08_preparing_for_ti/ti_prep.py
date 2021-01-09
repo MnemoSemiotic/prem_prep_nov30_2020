@@ -199,14 +199,17 @@ for num1 in [0,1,2,3]:
 
 # build_count_bins_dict(outcomes_X)
 
-d = dict()
-for num, lst in outcomes_X:
-    rounded = round(num, 1)
-    
-    if rounded not in d:
-        d[rounded] = 0
-    d[rounded] += 1
+def build_dict_bins(outcomes, precision=1):
+    d = dict()
+    for num, lst in outcomes:
+        rounded = round(num, precision)
+        
+        if rounded not in d:
+            d[rounded] = 0
+        d[rounded] += 1
+    return d
 
+d = build_dict_bins(outcomes_X, precision)
 for k, v in d.items():
     print(f'{k}: {v}')
     
