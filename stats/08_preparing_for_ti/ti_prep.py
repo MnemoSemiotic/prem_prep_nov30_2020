@@ -27,3 +27,12 @@ TI Skills/Outline
             * Load results into a dict
             * Interpret/Transform
 '''
+
+def factorial(n):
+    pass
+
+def combinations(n, k):
+    pass
+
+def binomial_pmf(n, k, p=0.5):
+    pass
