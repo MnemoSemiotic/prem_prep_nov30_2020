@@ -180,5 +180,21 @@ for num1 in [0,1,2,3]:
 # for outcome in outcomes_X:
 #     print(outcome)
 
-print(min(outcomes_X))
-print(max(outcomes_X))
+# print(min(outcomes_X))
+# print(max(outcomes_X))
+
+def build_count_bins_dict(outcomes):
+    min_ = min(outcomes)
+    max_ = max(outcomes)
+
+    bin_keys = [min_]
+    idx = 1
+    bin_val = 0
+
+    while bin_val <= max_:
+        bin_val = bin_keys[idx-1] + 0.1
+        bin_keys.append(bin_val)
+
+    print(bin_keys)
+
+build_count_bins_dict(outcomes_X)
