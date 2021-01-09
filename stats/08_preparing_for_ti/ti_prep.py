@@ -201,11 +201,11 @@ for num1 in [0,1,2,3]:
 
 d = dict()
 for num, lst in outcomes_X:
-    rounded = round(num, 3)
+    rounded = round(num, 1)
     
     if rounded not in d:
         d[rounded] = 0
-    d[rounded] += 0
+    d[rounded] += 1
 
 for k, v in d.items():
     print(f'{k}: {v}')
