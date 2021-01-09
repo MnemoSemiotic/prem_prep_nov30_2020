@@ -177,27 +177,6 @@ for num1 in [0,1,2,3]:
                                     continue
                                 outcomes_X.append(process_list([num1,num2,num3,num4,num5,num6,num7,num8,]))
 
-# for outcome in outcomes_X:
-#     print(outcome)
-
-# print(min(outcomes_X))
-# print(max(outcomes_X))
-
-# def build_count_bins_dict(outcomes):
-#     min_ = min(outcomes)
-#     max_ = max(outcomes)
-
-#     bin_keys = [min_]
-#     idx = 1
-#     bin_val = 0
-
-#     while bin_val <= max_[0]:
-#         bin_val = bin_keys[idx-1][0] + 0.1
-#         bin_keys.append((bin_val, bin_keys[idx-1][1]))
-
-#     print(bin_keys)
-
-# build_count_bins_dict(outcomes_X)
 
 def build_dict_bins(outcomes, precision=1):
     d = dict()
@@ -209,7 +188,7 @@ def build_dict_bins(outcomes, precision=1):
         d[rounded] += 1
     return d
 
-d = build_dict_bins(outcomes_X, precision)
+d = build_dict_bins(outcomes_X, precision=2)
 for k, v in d.items():
     print(f'{k}: {v}')
     
