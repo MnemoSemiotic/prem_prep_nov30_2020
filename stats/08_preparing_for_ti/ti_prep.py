@@ -116,12 +116,13 @@ def get_dependent_quaternary(n=8):
 
     for _ in range(n):
         if prior_val in base_4:
-            choose_from = base_4.remove(prior_val)
+            choose_from = base_4.copy()
+            choose_from.remove(prior_val)
         else:
             choose_from = base_4
 
-        prior_value = choice(choose_from)
-        quaternary.append(prior_value)
+        prior_val = choice(choose_from)
+        quaternary.append(prior_val)
 
     return quaternary
 
