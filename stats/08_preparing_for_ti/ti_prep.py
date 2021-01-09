@@ -139,4 +139,5 @@ def process_list(n=8):
     return accum, quart_list
 
 
-print(process_list(n=8))
+# print(process_list(n=8))
+
