@@ -188,7 +188,7 @@ def build_dict_bins(outcomes, precision=1):
         d[rounded] += 1
     return d
 
-d = build_dict_bins(outcomes_X, precision=2)
+d = build_dict_bins(outcomes_X, precision=1)
 for k, v in d.items():
     print(f'{k}: {v}')
     
