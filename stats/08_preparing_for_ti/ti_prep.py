@@ -139,8 +139,7 @@ def get_rand_process_list(n=8):
     return accum, quart_list
 
 
-def process_list(n=8):
-    quart_list = get_dependent_quaternary(n)
+def process_list(quart_list):
     accum = 0.0
 
     for idx, val in enumerate(quart_list, 0):
@@ -176,4 +175,7 @@ for num1 in [0,1,2,3]:
                             for num8 in [0,1,2,3]:
                                 if num8 == num7:
                                     continue
-                                outcomes_X.append([num1,num2,num3,num4,num5,num6,num7,num8,])
+                                outcomes_X.append(process_list([num1,num2,num3,num4,num5,num6,num7,num8,]))
+
+for outcome in outcomes_X:
+    print(outcome)
