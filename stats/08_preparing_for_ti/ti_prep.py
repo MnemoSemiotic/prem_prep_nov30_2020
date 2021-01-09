@@ -183,18 +183,30 @@ for num1 in [0,1,2,3]:
 # print(min(outcomes_X))
 # print(max(outcomes_X))
 
-def build_count_bins_dict(outcomes):
-    min_ = min(outcomes)
-    max_ = max(outcomes)
+# def build_count_bins_dict(outcomes):
+#     min_ = min(outcomes)
+#     max_ = max(outcomes)
 
-    bin_keys = [min_]
-    idx = 1
-    bin_val = 0
+#     bin_keys = [min_]
+#     idx = 1
+#     bin_val = 0
 
-    while bin_val <= max_[0]:
-        bin_val = bin_keys[idx-1][0] + 0.1
-        bin_keys.append((bin_val, bin_keys[idx-1][1]))
+#     while bin_val <= max_[0]:
+#         bin_val = bin_keys[idx-1][0] + 0.1
+#         bin_keys.append((bin_val, bin_keys[idx-1][1]))
 
-    print(bin_keys)
+#     print(bin_keys)
 
-build_count_bins_dict(outcomes_X)
+# build_count_bins_dict(outcomes_X)
+
+d = dict()
+for num, lst in outcomes_X:
+    rounded = round(num, 3)
+    
+    if rounded not in d:
+        d[rounded] = 0
+    d[rounded] += 0
+
+for k, v in d.items():
+    print(f'{k}: {v}')
+    
