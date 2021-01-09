@@ -129,3 +129,14 @@ def get_dependent_quaternary(n=8):
 # print(get_dependent_quaternary(n=8))
 
 
+def process_list(n=8):
+    quart_list = get_dependent_quaternary(n)
+    accum = 0.0
+
+    for idx, val in enumerate(quart_list, 0):
+        accum += val * 1/(4+idx)
+
+    return accum, quart_list
+
+
+print(process_list(n=8))
