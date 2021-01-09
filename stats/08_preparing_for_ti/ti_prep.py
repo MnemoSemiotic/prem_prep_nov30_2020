@@ -39,3 +39,16 @@ def combinations(n, k):
 
 def binomial_pmf(n, k, p=0.5):
     return combinations(n, k) * (p**k) * ((1-p)**(n-k))
+
+
+'''
+Binomial Textbook Probs
+You are sitting on a park bench watching city buses go by. On average,
+two out of every 13 buses that goes by has an advertisement for
+oat milk on it. What is the probability that, in one particular
+set of observations, 10 out of 20 buses have oat milk ads on them?
+'''
+p =
+k =
+n =
+print(binomial_pmf(n,k,p))
