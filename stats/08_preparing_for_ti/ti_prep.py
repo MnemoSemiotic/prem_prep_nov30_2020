@@ -54,8 +54,10 @@ n = 20
 # print(binomial_pmf(n,k,p))
 
 ''' what is the probability that less than 9 buses have oat milk adds?'''
-accum = 0.0
-for k_ in range(0, 8+1):
-    accum += binomial_pmf(n, k_, p)
+# accum = 0.0
+# for k_ in range(0, 8+1):
+#     accum += binomial_pmf(n, k_, p)
 
-print(accum)
+# print(accum)
+
+
