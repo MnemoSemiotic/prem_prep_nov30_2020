@@ -80,5 +80,9 @@ What is the probability that 9 stray cats walk on the coop in
 
 Constraints: time of night, seasonality, weather, other cats, don't affect the rate
 '''
-lmbda =
-k =
+lmbda = 5 * (3/2) # 7.5
+k = 9
+
+# print(poisson_pmf(lmbda, k))
+
+
