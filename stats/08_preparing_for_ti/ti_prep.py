@@ -48,7 +48,14 @@ two out of every 13 buses that goes by has an advertisement for
 oat milk on it. What is the probability that, in one particular
 set of observations, 10 out of 20 buses have oat milk ads on them?
 '''
-p =
-k =
-n =
-print(binomial_pmf(n,k,p))
+p = 2/13
+k = 10
+n = 20
+# print(binomial_pmf(n,k,p))
+
+''' what is the probability that less than 9 buses have oat milk adds?'''
+accum = 0.0
+for k_ in range(0, 8+1):
+    accum += binomial_pmf(n, k_, p)
+
+print(accum)
