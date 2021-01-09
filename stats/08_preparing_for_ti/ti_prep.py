@@ -191,9 +191,9 @@ def build_count_bins_dict(outcomes):
     idx = 1
     bin_val = 0
 
-    while bin_val <= max_:
-        bin_val = bin_keys[idx-1] + 0.1
-        bin_keys.append(bin_val)
+    while bin_val <= max_[0]:
+        bin_val = bin_keys[idx-1][0] + 0.1
+        bin_keys.append((bin_val, bin_keys[idx-1][1]))
 
     print(bin_keys)
 
