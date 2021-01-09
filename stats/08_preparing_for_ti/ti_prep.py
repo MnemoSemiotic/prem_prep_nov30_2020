@@ -120,7 +120,8 @@ def get_dependent_quaternary(n=8):
         else:
             choose_from = base_4
 
-        quaternary.append(choice(choose_from))
+        prior_value = choice(choose_from)
+        quaternary.append(prior_value)
 
     return quaternary
 
