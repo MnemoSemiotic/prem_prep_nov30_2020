@@ -28,6 +28,10 @@ TI Skills/Outline
             * Interpret/Transform
 '''
 
+
+'''
+Binomial
+'''
 def factorial(n):
     prod = 1
     for  num in range(1, n+1):
@@ -61,3 +65,20 @@ n = 20
 # print(accum)
 
 
+'''
+Poisson
+'''
+from math import e
+
+def poisson_pmf(lmbda, k):
+    return lmbda**k * e**(-lmbda) / factorial(k)
+
+'''
+Five stray cats walk on your chicken coop every 2 hours at night. 
+What is the probability that 9 stray cats walk on the coop in
+3 hours on a given night?
+
+Constraints: time of night, seasonality, weather, other cats, don't affect the rate
+'''
+lmbda =
+k =
