@@ -86,3 +86,42 @@ k = 9
 # print(poisson_pmf(lmbda, k))
 
 
+'''
+Defining Random Vars and Coding Exploration of RVs
+'''
+
+'''
+Define a process:
+    Generate random lists of length n in base 4 {0,1,2,3}
+    If a given value is drawn, then that value cannot be
+    drawn on the next draw. No two values can be the same
+    in a row.
+
+Define an RV:
+    The RV X represents a list of values generated in
+    the process above put through this mathematical
+    formulation.
+
+    The first value will get multiplied by 1/4, the second value
+    by 1/5, the third value by 1/6, and so on... and all of these
+    will get summed together. 
+'''
+from random import choice
+
+def get_dependent_quaternary(n=8):
+    base_4 = [0,1,2,3]
+    prior_val = -1
+
+    quaternary = []
+
+    for _ in range(n):
+        if prior_val in base_4:
+            choose_from = base_4.remove(prior_val)
+        else:
+            choose_from = base_4
+
+        quaternary.append(choice(choose_from))
+
+    return quaternary
+
+print(get_dependent_quaternary(n=8))
