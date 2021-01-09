@@ -126,4 +126,6 @@ def get_dependent_quaternary(n=8):
 
     return quaternary
 
-print(get_dependent_quaternary(n=8))
+# print(get_dependent_quaternary(n=8))
+
+
