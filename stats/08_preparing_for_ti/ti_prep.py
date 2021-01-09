@@ -177,5 +177,8 @@ for num1 in [0,1,2,3]:
                                     continue
                                 outcomes_X.append(process_list([num1,num2,num3,num4,num5,num6,num7,num8,]))
 
-for outcome in outcomes_X:
-    print(outcome)
+# for outcome in outcomes_X:
+#     print(outcome)
+
+print(min(outcomes_X))
+print(max(outcomes_X))
