@@ -12,7 +12,6 @@ TI Skills/Outline
         * Uniform
         * Bayes Theorem
 
-    
     * Understanding counting or binary through the lens of independent trials
         * binary ex: [0,1,1,0,1] <- each "coin flip or bit is independent of the other, if each bit is randomly generated"
         * trinary ex: [0, 1, 1, 2, 0]
